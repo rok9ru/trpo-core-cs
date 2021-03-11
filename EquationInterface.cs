@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Lab.core
 {
-    interface EquationInterface
+    public interface EquationInterface
     {
         List<float> Solve(float a, float b, float c);
     }

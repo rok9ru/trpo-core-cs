@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab.core
-{
-    interface LogInterface
-    {
-        void Log(string str);
-        void Write();
+namespace Lab.core {
+    public interface LogInterface {
+	static void Log(string str){}
+	static void Write() {}
     }
-}
+} 
