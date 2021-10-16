@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab.core
+namespace Lab.Core
 {
     public interface EquationInterface
     {

@@ -2,11 +2,23 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Lab.core {
-    public abstract class LogAbstract {
+namespace Lab.Core
+{
+    public abstract class LogAbstract
+    {
+        protected string FormatLog(string[] strings)
+        {
+            return string.Join(";\n\r", strings);
+        }
 
-        public List<string> log = new List<string>();
-        public abstract void _write();
-        public abstract void _log(string str);
+        protected void WriteConsole(string s)
+        {
+            Console.WriteLine(s);
+        }
+
+        protected void WriteConsole(string[] s)
+        {
+            Console.WriteLine(FormatLog(s));
+        }
     }
 }
